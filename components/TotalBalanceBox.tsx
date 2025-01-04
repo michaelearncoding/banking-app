@@ -1,6 +1,8 @@
 import React from 'react';
 import { formatAmount } from "@/lib/utils";
 import DoughnutChart from "@/components/DoughnutChart";
+// import CountUp from 'react-countup';
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 interface TotalBalanceBoxProps {
     accounts: Account[];
@@ -25,7 +27,9 @@ const TotalBalanceBox: React.FC<TotalBalanceBoxProps> = ({ accounts, totalBanks,
                         Total Current Balance
                     </p>
                     <p className={"total-balance-amount flex-center gap-2"}>
-                        {formatAmount(totalCurrentBalance)}
+
+                        <AnimatedCounter amount={totalCurrentBalance} />
+                        {/*{formatAmount(totalCurrentBalance)}*/}
                     </p>
                 </div>
             </div>
