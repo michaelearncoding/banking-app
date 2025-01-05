@@ -1,6 +1,8 @@
 
 # banking-app
-A modern Alipay prototype with up-to-date stack
+A modern Alipay prototype with up-to-date stack...
+
+Exploring more AI intergrated Project...
 
 
 
